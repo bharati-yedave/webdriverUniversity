@@ -1,0 +1,23 @@
+{
+  "name": "webdriveruniversity",
+  "version": "1.0.0",
+  "description": "webdriverUniversity",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bharati-yedave/webdriverUniversity.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bharati-yedave/webdriverUniversity/issues"
+  },
+  "homepage": "https://github.com/bharati-yedave/webdriverUniversity#readme",
+  "dependencies": {
+    "cypress": "^13.6.4",
+    "npx": "^10.2.2"
+  }
+}
