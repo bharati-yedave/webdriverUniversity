@@ -4,7 +4,22 @@
   "description": "webdriverUniversity",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "triggerAllTest-open-cypress": "npx cypress open",
+    "triggerAllTest-headless": "npx cypress run",
+    "triggerAllTest-headed": "npx cypress run --headed",
+    "triggerAllTest-chrome": "npx cypress run --browser chrome",
+    "triggerAllTest-dashboard": "npx cypress run --record --key 34e55fa3-96a2-4440-8db4-d6c0007de0d8",
+    "triggerAllTest-webDriverUniversity": "npx cypress run --spec cypress/e2e/webDU/*",
+    "triggerAllTest-autoMationTestStore": "npx cypress run --spec cypress/e2e/autoMtestStore/*",
+    "triggerAllTest-autoMationTestStore-specificfile": "npx cypress run --spec cypress/e2e/webDU/contact-us.cy.js",
+    "specific-file-run": "npx cypress run --browser chrome --headed --spec cypress/e2e/other1/hooks.cy.js",
+    "junit-mergeAll-report": "npx junit-merge -d cypress/results/junit -o cypress/results/junit/results.xml",
+    "delete-junit-report": "rimraf cypress/results/junit/results.xml",
+    "delete-junit-allReport": "rimraf cypress/results/* || true",
+    "mochawesomejson-Report-Generator": "npx mochawesome-merge cypress/results/*.json | out-file -encoding ascii mochawesome.json",
+    "mochawesomehtml-Report-Generator": "npx marge mochawesome.json",
+    "mochawesomejsontohtml-Report-Generator": "npx mochawesome-merge cypress/results/mochawesome/*.json | out-file -encoding ascii mochawesome.json ; npx marge mochawesome.json",
+    "mochwesome-report-gen": ""
   },
   "repository": {
     "type": "git",
@@ -18,6 +33,15 @@
   "homepage": "https://github.com/bharati-yedave/webdriverUniversity#readme",
   "dependencies": {
     "cypress": "^13.6.4",
+    "cypress-xpath": "^2.0.1",
     "npx": "^10.2.2"
+  },
+  "devDependencies": {
+    "@4tw/cypress-drag-drop": "^2.2.5",
+    "cypress-multi-reporters": "^1.6.4",
+    "mocha-junit-reporter": "^2.2.1",
+    "mochawesome": "^7.1.3",
+    "mochawesome-merge": "^4.3.0",
+    "mochawesome-report-generator": "^6.2.0"
   }
 }
