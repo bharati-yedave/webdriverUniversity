@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2024-02-23T01:39:12.446Z",
-    "end": "2024-02-23T01:39:19.869Z",
-    "duration": 7423,
+    "start": "2024-02-23T07:37:41.981Z",
+    "end": "2024-02-23T07:37:50.738Z",
+    "duration": 8757,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "4383d8cc-8b87-4118-93ac-972ca0d9248a",
+      "uuid": "021a70a0-79fa-4075-b9e0-b81a904b0d41",
       "title": "",
       "fullFile": "cypress\\e2e\\autoMtestStore\\alias-invoke.cy.js",
       "file": "cypress\\e2e\\autoMtestStore\\alias-invoke.cy.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "a78b0281-96eb-4bd8-970a-f03a5faf01f8",
+          "uuid": "95d8a1e5-96ad-437a-bd53-150530dc099b",
           "title": "Alias and invoke command",
           "fullFile": "",
           "file": "",
@@ -38,29 +38,29 @@
               "title": "Calculate total of normal and sale products",
               "fullTitle": "Alias and invoke command Calculate total of normal and sale products",
               "timedOut": null,
-              "duration": 4378,
+              "duration": 5724,
               "state": "passed",
-              "speed": "fast",
+              "speed": "medium",
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
               "code": "cy.visit(\"https://automationteststore.com/\");\n// cy.get(\".thumbnail\")\n//   .find(\".oneprice\")\n//   .each((el, index, list) => {\n//     const nonSaleProduct = el.text().split(\"$\");\n//   });\n//with alias\nvar itemTotal = 0;\ncy.get(\".thumbnail\").find(\".oneprice\").invoke(\"text\").as(\"nonSaleProduct\");\ncy.get(\"@nonSaleProduct\").then(listtext => {\n  var nonsaleTotal = 0;\n  var productPrice = listtext.split(\"$\");\n  for (let i = 0; i < productPrice.length; i++) {\n    cy.log(productPrice[i]);\n    nonsaleTotal += Number(productPrice[i]);\n  }\n  itemTotal += nonsaleTotal;\n  cy.log(\"All Non sale item total : \" + nonsaleTotal);\n});\n//without alias\ncy.get(\".thumbnail\").find(\".pricenew\").invoke(\"text\").then(listtext => {\n  var saleTotal = 0;\n  var saleproductPrice = listtext.split(\"$\");\n  for (let i = 0; i < saleproductPrice.length; i++) {\n    cy.log(saleproductPrice[i]);\n    saleTotal += Number(saleproductPrice[i]);\n  }\n  itemTotal += saleTotal;\n  cy.log(\"All Sale item total : \" + saleTotal);\n}).then(() => {\n  cy.log(\"Oerall Product total : \" + itemTotal);\n  expect(itemTotal).to.equal(660.5);\n});",
               "err": {},
-              "uuid": "f58cccf1-f5cb-4ec6-8a9c-138b8834c212",
-              "parentUUID": "a78b0281-96eb-4bd8-970a-f03a5faf01f8",
+              "uuid": "f9fcfd3e-dbf4-4d55-9678-aa2bbc57fc06",
+              "parentUUID": "95d8a1e5-96ad-437a-bd53-150530dc099b",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "f58cccf1-f5cb-4ec6-8a9c-138b8834c212"
+            "f9fcfd3e-dbf4-4d55-9678-aa2bbc57fc06"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 4378,
+          "duration": 5724,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

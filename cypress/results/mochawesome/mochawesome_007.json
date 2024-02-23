@@ -1,0 +1,150 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 2,
+    "pending": 0,
+    "failures": 1,
+    "start": "2024-02-23T07:39:12.557Z",
+    "end": "2024-02-23T07:39:26.906Z",
+    "duration": 14349,
+    "testsRegistered": 3,
+    "passPercent": 66.66666666666666,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "23ec9a89-0e6c-4ed0-8ae3-301f4fe23a4c",
+      "title": "",
+      "fullFile": "cypress\\e2e\\other1\\same-origin-policy.cy.js",
+      "file": "cypress\\e2e\\other1\\same-origin-policy.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "f4b5be08-9183-49cb-9da7-a8eba9c556c5",
+          "title": "Cypress Web Security",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Validating Two different domain",
+              "fullTitle": "Cypress Web Security Validating Two different domain",
+              "timedOut": null,
+              "duration": 7018,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(\"https://www.webdriveruniversity.com/\");\ncy.visit(\"https://www.google.com/\");",
+              "err": {},
+              "uuid": "f1c37dae-2ad0-4a13-8257-2a56a293c203",
+              "parentUUID": "f4b5be08-9183-49cb-9da7-a8eba9c556c5",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Validating Same superdomain with their subdomain",
+              "fullTitle": "Cypress Web Security Validating Same superdomain with their subdomain",
+              "timedOut": null,
+              "duration": 6625,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(\"https://www.webdriveruniversity.com\");\ncy.get(\"#automation-test-store\").invoke(\"removeAttr\", \"target\").click();",
+              "err": {},
+              "uuid": "6188bde5-dd92-48ed-be94-3231bb883793",
+              "parentUUID": "f4b5be08-9183-49cb-9da7-a8eba9c556c5",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "origin comand ",
+              "fullTitle": "Cypress Web Security origin comand ",
+              "timedOut": null,
+              "duration": 290,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.origin(\"webdriveruniversity.com\", () => {\n  cy.visit(\"/\");\n});\ncy.origin(\"automationteststore.com\", () => {\n  cy.visit(\"/\");\n});",
+              "err": {
+                "message": "CypressError: `cy.origin()` requires the first argument to be a different domain than top. You passed `webdriveruniversity.com` to the origin command, while top is at `https://www.webdriveruniversity.com`.\n\nEither the intended page was not visited prior to running the cy.origin block or the cy.origin block may not be needed at all.\n\nhttps://on.cypress.io/origin",
+                "estack": "CypressError: `cy.origin()` requires the first argument to be a different domain than top. You passed `webdriveruniversity.com` to the origin command, while top is at `https://www.webdriveruniversity.com`.\n\nEither the intended page was not visited prior to running the cy.origin block or the cy.origin block may not be needed at all.\n\nhttps://on.cypress.io/origin\n    at Validator.validateLocation (https://www.webdriveruniversity.com/__cypress/runner/cypress_runner.js:120868:68)\n    at Context.origin (https://www.webdriveruniversity.com/__cypress/runner/cypress_runner.js:120571:17)\n    at wrapped (https://www.webdriveruniversity.com/__cypress/runner/cypress_runner.js:138282:43)\nFrom Your Spec Code:\n    at Context.eval (webpack://webdriveruniversity/./cypress/e2e/other1/same-origin-policy.cy.js:14:7)",
+                "diff": null
+              },
+              "uuid": "6dc87156-49f1-46eb-8045-d33168decb16",
+              "parentUUID": "f4b5be08-9183-49cb-9da7-a8eba9c556c5",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "f1c37dae-2ad0-4a13-8257-2a56a293c203",
+            "6188bde5-dd92-48ed-be94-3231bb883793"
+          ],
+          "failures": [
+            "6dc87156-49f1-46eb-8045-d33168decb16"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 13933,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/results/mochawesome",
+        "quite": "true",
+        "overwrite": "false",
+        "html": "false",
+        "json": "true"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

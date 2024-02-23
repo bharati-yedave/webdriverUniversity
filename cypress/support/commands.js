@@ -19,7 +19,7 @@ require("@4tw/cypress-drag-drop");
 Cypress.Commands.add("navigatTo_WebdriverUni_Homepage", (productname) => {
   cy.visit("/");
 });
-Cypress.Commands.add("navigatTo_WebdriverUni_Checkbox_Page", (productname) => {
+Cypress.Commands.add("navigateTo_WebdriverUni_Checkbox_Page", (productname) => {
   cy.visit("/" + "/Dropdown-Checkboxes-RadioButtons/index.html");
 });
 Cypress.Commands.add("selectProduct", (productname) => {

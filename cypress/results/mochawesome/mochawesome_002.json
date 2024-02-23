@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2024-02-23T01:39:22.493Z",
-    "end": "2024-02-23T01:39:33.902Z",
-    "duration": 11409,
+    "start": "2024-02-23T07:37:53.479Z",
+    "end": "2024-02-23T07:38:05.514Z",
+    "duration": 12035,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "f494416f-4015-44ff-8dbc-76639d775798",
+      "uuid": "c61a4df6-3f31-4f91-a346-9e1162d106d5",
       "title": "",
       "fullFile": "cypress\\e2e\\autoMtestStore\\contact-us.cy.js",
       "file": "cypress\\e2e\\autoMtestStore\\contact-us.cy.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "102d0093-4ea0-4deb-96bf-8b8867233193",
+          "uuid": "880f6a17-1d55-48a4-91d1-91f120d4e86a",
           "title": "Test Contach Us form via WebdriverUniversity",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Should be able to submit a successful submission via contact us form",
               "fullTitle": "Test Contach Us form via WebdriverUniversity Should be able to submit a successful submission via contact us form",
               "timedOut": null,
-              "duration": 8091,
+              "duration": 8699,
               "state": "passed",
               "speed": "medium",
               "pass": true,
@@ -47,20 +47,20 @@
               "context": null,
               "code": "//cypress code\ncy.visit(\"https://automationteststore.com/\");\ncy.get(\".info_links_footer\").contains(\"Contact Us\").click();\ncy.get(\"@user\").then(user => {\n  cy.get(\"[name='first_name']\").type(user.name);\n  cy.get(\"[for='ContactUsFrm_email']\").type(user.email);\n  cy.get('[name=\"enquiry\"]').type(\"this is the enquiry textbox \");\n});\ncy.get(\"[title='Submit']\").click();\ncy.get(\".contentpanel p\").should(\"have.text\", \"Your enquiry has been successfully sent to the store owner!\");",
               "err": {},
-              "uuid": "b2714f13-e14c-4588-81e7-297480a9265d",
-              "parentUUID": "102d0093-4ea0-4deb-96bf-8b8867233193",
+              "uuid": "0133b9bd-cc72-4c73-b85e-96413b21b445",
+              "parentUUID": "880f6a17-1d55-48a4-91d1-91f120d4e86a",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "b2714f13-e14c-4588-81e7-297480a9265d"
+            "0133b9bd-cc72-4c73-b85e-96413b21b445"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 8091,
+          "duration": 8699,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
