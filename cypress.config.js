@@ -34,7 +34,7 @@ module.exports = defineConfig({
     },
     env: {
       first_name: "Sarah",
-      webdriveruni_homepage: "https://www.webdriveruniversity.com",
+      webdriveruni_homepage: "https://www.webdriveruniversity.com/",
       automationstore_homepage: "https://automationteststore.com/",
     },
   },

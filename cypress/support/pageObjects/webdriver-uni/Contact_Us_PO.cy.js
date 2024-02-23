@@ -1,4 +1,4 @@
-class Contact_Us_PO {
+class Contact_us_PO {
   ContactForm_Submission(fname, lname, emailid, comment, $selector, message) {
     cy.get("[name='first_name']").type(fname);
     cy.get("[name='last_name']").type(lname);
@@ -10,4 +10,4 @@ class Contact_Us_PO {
     cy.screenshot("Make Contact us form submission");
   }
 }
-export default Contact_Us_PO;
+export default Contact_us_PO;
