@@ -5,9 +5,9 @@
     "passes": 3,
     "pending": 0,
     "failures": 0,
-    "start": "2024-02-23T07:38:07.874Z",
-    "end": "2024-02-23T07:38:34.087Z",
-    "duration": 26213,
+    "start": "2024-02-24T07:16:07.758Z",
+    "end": "2024-02-24T07:16:30.272Z",
+    "duration": 22514,
     "testsRegistered": 3,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "01c5ef2c-1eae-4812-a338-d9b0b576274b",
+      "uuid": "9afb5b96-e9ef-48f5-82b5-498cbec0f2ae",
       "title": "",
       "fullFile": "cypress\\e2e\\autoMtestStore\\inspect-item.cy.js",
       "file": "cypress\\e2e\\autoMtestStore\\inspect-item.cy.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "04f62a36-6158-4da6-ad9e-e6f87b40c0fa",
+          "uuid": "a6ed2748-5dc3-48e3-90aa-5e8d4c266ff3",
           "title": "Inspect Automation Test Store items using chain of commands",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Click on the first item using item header",
               "fullTitle": "Inspect Automation Test Store items using chain of commands Click on the first item using item header",
               "timedOut": null,
-              "duration": 8063,
+              "duration": 7171,
               "state": "passed",
               "speed": "medium",
               "pass": true,
@@ -47,8 +47,8 @@
               "context": null,
               "code": "cy.visit(\"https://www.automationteststore.com/\");\ncy.get('#block_frame_featured_1769 > .thumbnails > :nth-child(1) > .fixed_wrapper > .fixed > .prdocutname').click();",
               "err": {},
-              "uuid": "e2c1c10b-5b4b-4d8d-b0d9-5cbc63917fae",
-              "parentUUID": "04f62a36-6158-4da6-ad9e-e6f87b40c0fa",
+              "uuid": "c81d0674-fafa-499d-9d5e-a66189ddaeae",
+              "parentUUID": "a6ed2748-5dc3-48e3-90aa-5e8d4c266ff3",
               "isHook": false,
               "skipped": false
             },
@@ -56,7 +56,7 @@
               "title": "Click on the first item using item text",
               "fullTitle": "Inspect Automation Test Store items using chain of commands Click on the first item using item text",
               "timedOut": null,
-              "duration": 7232,
+              "duration": 5916,
               "state": "passed",
               "speed": "medium",
               "pass": true,
@@ -65,8 +65,8 @@
               "context": null,
               "code": "cy.visit(\"https://www.automationteststore.com/\");\ncy.get('.prdocutname').contains('Skinsheen Bronzer Stick').click();",
               "err": {},
-              "uuid": "d8eb149f-9f63-48d9-8aca-8a5dc0c98467",
-              "parentUUID": "04f62a36-6158-4da6-ad9e-e6f87b40c0fa",
+              "uuid": "61b28400-eafa-4ba4-8b09-dcbd8f26b5f5",
+              "parentUUID": "a6ed2748-5dc3-48e3-90aa-5e8d4c266ff3",
               "isHook": false,
               "skipped": false
             },
@@ -74,7 +74,7 @@
               "title": "Click on the first item using index",
               "fullTitle": "Inspect Automation Test Store items using chain of commands Click on the first item using index",
               "timedOut": null,
-              "duration": 6782,
+              "duration": 6094,
               "state": "passed",
               "speed": "medium",
               "pass": true,
@@ -83,22 +83,22 @@
               "context": null,
               "code": "cy.visit(\"https://www.automationteststore.com/\");\ncy.get('.fixed_wrapper').find('.prdocutname').eq(0).click();",
               "err": {},
-              "uuid": "737630ce-1c7e-4629-9f97-ecc00b4d5c1f",
-              "parentUUID": "04f62a36-6158-4da6-ad9e-e6f87b40c0fa",
+              "uuid": "0b281a14-1ebc-4973-a9df-8c6df902a9cb",
+              "parentUUID": "a6ed2748-5dc3-48e3-90aa-5e8d4c266ff3",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "e2c1c10b-5b4b-4d8d-b0d9-5cbc63917fae",
-            "d8eb149f-9f63-48d9-8aca-8a5dc0c98467",
-            "737630ce-1c7e-4629-9f97-ecc00b4d5c1f"
+            "c81d0674-fafa-499d-9d5e-a66189ddaeae",
+            "61b28400-eafa-4ba4-8b09-dcbd8f26b5f5",
+            "0b281a14-1ebc-4973-a9df-8c6df902a9cb"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 22077,
+          "duration": 19181,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2024-02-23T07:37:27.294Z",
-    "end": "2024-02-23T07:37:39.319Z",
-    "duration": 12025,
+    "start": "2024-02-24T07:15:37.714Z",
+    "end": "2024-02-24T07:15:47.486Z",
+    "duration": 9772,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "a104c91b-21b6-4e36-954e-db50bdb0a85c",
+      "uuid": "f74b4118-9ff0-4a6b-b248-b6c1661c23b8",
       "title": "",
       "fullFile": "cypress\\e2e\\autoMtestStore\\add-multiple-items-to-basket.cy.js",
       "file": "cypress\\e2e\\autoMtestStore\\add-multiple-items-to-basket.cy.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "fe5b9db3-9157-4240-a94c-40ab2a4ad68e",
+          "uuid": "71319abb-886a-47a4-8762-4125ac4af39a",
           "title": "Add Multiple items to basket",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Add specific product item to basket",
               "fullTitle": "Add Multiple items to basket Add specific product item to basket",
               "timedOut": null,
-              "duration": 8326,
+              "duration": 6956,
               "state": "passed",
               "speed": "medium",
               "pass": true,
@@ -47,20 +47,20 @@
               "context": null,
               "code": "addHCPTBasket.addHairCareProductToBasket();",
               "err": {},
-              "uuid": "7624be6a-0958-4e5c-b1c8-dcf7446f9449",
-              "parentUUID": "fe5b9db3-9157-4240-a94c-40ab2a4ad68e",
+              "uuid": "8eb41cdd-6a58-49f8-a410-652dd52639c6",
+              "parentUUID": "71319abb-886a-47a4-8762-4125ac4af39a",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "7624be6a-0958-4e5c-b1c8-dcf7446f9449"
+            "8eb41cdd-6a58-49f8-a410-652dd52639c6"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 8326,
+          "duration": 6956,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
