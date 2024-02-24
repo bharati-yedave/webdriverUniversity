@@ -5,9 +5,9 @@
     "passes": 2,
     "pending": 0,
     "failures": 0,
-    "start": "2024-02-24T07:23:31.548Z",
-    "end": "2024-02-24T07:23:37.194Z",
-    "duration": 5646,
+    "start": "2024-02-24T11:08:21.117Z",
+    "end": "2024-02-24T11:08:29.615Z",
+    "duration": 8498,
     "testsRegistered": 2,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "d4888af8-42a8-4922-a6c4-d3ca306be470",
+      "uuid": "6a06fc32-e87d-45b6-b804-5fe864f6c0e8",
       "title": "",
       "fullFile": "cypress\\e2e\\webUni\\file-upload.cy.js",
       "file": "cypress\\e2e\\webUni\\file-upload.cy.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "9067479c-72a0-4139-99f1-2f804520f9b5",
+          "uuid": "e9119210-2bbf-419c-9b29-efc1acad70ca",
           "title": "Test File Upload via webdriveruni",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Upload a file....",
               "fullTitle": "Test File Upload via webdriveruni Upload a file....",
               "timedOut": null,
-              "duration": 2629,
+              "duration": 3357,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -47,8 +47,8 @@
               "context": null,
               "code": "cy.visit(\"http://www.webdriveruniversity.com\");\ncy.get('#file-upload').invoke('removeAttr', 'target').click({\n  force: true\n});\ncy.get(\"#myFile\").selectFile(\"cypress/fixtures/laptop.png\");\ncy.get(\"#submit-button\").click();",
               "err": {},
-              "uuid": "1e283e7c-9e5c-49ee-919f-18e69fe0b2da",
-              "parentUUID": "9067479c-72a0-4139-99f1-2f804520f9b5",
+              "uuid": "06f39e0d-c81f-4871-a8d1-c491bffa0bb5",
+              "parentUUID": "e9119210-2bbf-419c-9b29-efc1acad70ca",
               "isHook": false,
               "skipped": false
             },
@@ -56,7 +56,7 @@
               "title": "Upload No file...",
               "fullTitle": "Test File Upload via webdriveruni Upload No file...",
               "timedOut": null,
-              "duration": 677,
+              "duration": 1244,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -65,21 +65,21 @@
               "context": null,
               "code": "cy.visit(\"http://www.webdriveruniversity.com\");\ncy.get('#file-upload').invoke('removeAttr', 'target').click({\n  force: true\n});\ncy.get(\"#submit-button\").click();",
               "err": {},
-              "uuid": "ce555df6-93c1-4f64-95d4-de03e1d186ed",
-              "parentUUID": "9067479c-72a0-4139-99f1-2f804520f9b5",
+              "uuid": "4c2dcb5e-9d24-4ca1-9c12-e6cb240a8ac8",
+              "parentUUID": "e9119210-2bbf-419c-9b29-efc1acad70ca",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "1e283e7c-9e5c-49ee-919f-18e69fe0b2da",
-            "ce555df6-93c1-4f64-95d4-de03e1d186ed"
+            "06f39e0d-c81f-4871-a8d1-c491bffa0bb5",
+            "4c2dcb5e-9d24-4ca1-9c12-e6cb240a8ac8"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 3306,
+          "duration": 4601,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

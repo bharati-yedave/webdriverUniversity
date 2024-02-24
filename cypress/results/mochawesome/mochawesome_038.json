@@ -1,0 +1,131 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 1,
+    "pending": 0,
+    "failures": 1,
+    "start": "2024-02-24T11:09:12.441Z",
+    "end": "2024-02-24T11:09:29.145Z",
+    "duration": 16704,
+    "testsRegistered": 2,
+    "passPercent": 50,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "edcf5fbb-d106-4477-9591-77edc89840e9",
+      "title": "",
+      "fullFile": "cypress\\e2e\\webUni\\radio-buttons.cy.js",
+      "file": "cypress\\e2e\\webUni\\radio-buttons.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "5cf31a76-617d-4393-9ab3-4c4c7af8408e",
+          "title": "Verify radio buttons via webdriveruni",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Check specific radio buttons",
+              "fullTitle": "Verify radio buttons via webdriveruni Check specific radio buttons",
+              "timedOut": null,
+              "duration": 2823,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('#radio-buttons').find(\"[type='radio']\").first().check();\ncy.get('#radio-buttons').find(\"[type='radio']\").eq(1).check();",
+              "err": {},
+              "uuid": "31010825-15a2-4109-9840-49166d54c489",
+              "parentUUID": "5cf31a76-617d-4393-9ab3-4c4c7af8408e",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Validate the states of specific radio buttons",
+              "fullTitle": "Verify radio buttons via webdriveruni Validate the states of specific radio buttons",
+              "timedOut": null,
+              "duration": 10389,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.get(\"[value='lettuce']\").should('not.be.checked');\ncy.get(\"[value='pumpkin']\").should('be.checked');\ncy.get(\"[value='lettuce']\").check();\ncy.get(\"[value='lettuce']\").should('be.checked');\ncy.get(\"[value='pumpkin']\").should('not.be.checked');\ncy.get(\"[value='cabbage']\").should('be.disabled');",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 10000ms: Expected to find element: `[value='lettuce']`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 10000ms: Expected to find element: `[value='lettuce']`, but never found it.\n    at Context.eval (webpack://webdriveruniversity/./cypress/e2e/webUni/radio-buttons.cy.js:14:36)",
+                "diff": null
+              },
+              "uuid": "3cb96f5b-556e-41e6-9583-8b03dc96534f",
+              "parentUUID": "5cf31a76-617d-4393-9ab3-4c4c7af8408e",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "31010825-15a2-4109-9840-49166d54c489"
+          ],
+          "failures": [
+            "3cb96f5b-556e-41e6-9583-8b03dc96534f"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 13212,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/results/mochawesome",
+        "quite": "true",
+        "overwrite": "false",
+        "html": "false",
+        "json": "true"
+      },
+      "version": "6.2.0"
+    }
+  }
+}
