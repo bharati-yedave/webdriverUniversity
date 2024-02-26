@@ -15,7 +15,7 @@ pipeline{
                         bat 'npm run triggerAllTest-dashboard-Automationteststore'
                     }
                 }
-                stage('Slave Node1'){
+                stage('Slave Node2'){
                     agent{
                         label "remote_node2"
                     }
