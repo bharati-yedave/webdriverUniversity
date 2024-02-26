@@ -23,7 +23,7 @@ pipeline{
                         git url: 'https://github.com/bharati-yedave/webdriverUniversity.git'
                         bat 'npm install'
                         bat 'npm update'
-                        bat 'npm run triggerAllTest-dashboard-Webdriveruniversity'
+                        bat 'npm run triggerAllTest-dashboard-Automationteststore'
                     }
                 }
             }
