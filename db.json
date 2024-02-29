@@ -1,0 +1,64 @@
+{
+  "posts": [
+    {
+      "id": "1",
+      "title": "a title",
+      "views": 100
+    },
+    {
+      "title": "Update using PUT method",
+      "author": "Bharati Yedave",
+      "id": "2"
+    },
+    {
+      "id": "cf2b",
+      "title": "Want to learn automation testing?",
+      "author": "Sarah Jones"
+    },
+    {
+      "id": "4d68",
+      "title": "Want to learn automation testing?",
+      "author": "Sarah Jones"
+    },
+    {
+      "id": "ad3a",
+      "title": "Want to learn automation testing?",
+      "author": "Sarah Jones"
+    },
+    {
+      "id": "1245",
+      "title": "Want to learn automation testing?",
+      "author": "Sarah Jones"
+    },
+    {
+      "id": "1c86",
+      "title": ".uool4q94ebe.7vq003mfxly",
+      "author": "Sarah Jones"
+    }
+  ],
+  "comments": [
+    {
+      "id": "1",
+      "text": "a comment about post 1",
+      "postId": "1"
+    },
+    {
+      "id": "2",
+      "text": "another comment about post 1",
+      "postId": "1"
+    },
+    {
+      "id": "dd13",
+      "text": ".05539387231c1",
+      "postId": 755
+    },
+    {
+      "id": "4121",
+      "text": ".617gedbd2df6",
+      "postId": 696
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
