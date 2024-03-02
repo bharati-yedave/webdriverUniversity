@@ -1,0 +1,107 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-03-01T16:21:38.419Z",
+    "end": "2024-03-01T16:21:47.758Z",
+    "duration": 9339,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "5ca94e31-14a6-4d6f-b604-fe3c277eacb5",
+      "title": "",
+      "fullFile": "cypress\\e2e\\autoMtestStore\\test_retries.cy.js",
+      "file": "cypress\\e2e\\autoMtestStore\\test_retries.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "79a8e89c-666c-4675-9ed0-db8a90208c52",
+          "title": "Test Contach Us form via WebdriverUniversity",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Should be able to submit a successful submission via contact us form",
+              "fullTitle": "Test Contach Us form via WebdriverUniversity Should be able to submit a successful submission via contact us form",
+              "timedOut": null,
+              "duration": 6259,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//cypress code\ncy.visit(\"https://automationteststore.com/\");\ncy.get(\".info_links_footer\").contains(\"Contact Us\").click();\ncy.get(\"@user\").then(function (user) {\n  cy.get(\"[name='first_name']\").type(user.name);\n  cy.get(\"[for='ContactUsFrm_email']\").type(user.email);\n  cy.get('[name=\"enquiry\"]').type(\"this is the enquiry textbox \");\n});\ncy.get(\"[title='Submit']\").click();\ncy.get(\".contentpanel p\").should(\"have.text\", \"Your enquiry has been successfully sent to the store owner!\");",
+              "err": {},
+              "uuid": "b8fa2a97-be6a-4fdf-8f36-025adfa14a80",
+              "parentUUID": "79a8e89c-666c-4675-9ed0-db8a90208c52",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "b8fa2a97-be6a-4fdf-8f36-025adfa14a80"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 6259,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/results/mochawesome",
+        "quite": "true",
+        "overwrite": "false",
+        "html": "false",
+        "json": "true"
+      },
+      "version": "6.2.0"
+    }
+  }
+}
