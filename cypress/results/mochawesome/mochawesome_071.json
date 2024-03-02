@@ -1,0 +1,165 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 4,
+    "passes": 2,
+    "pending": 2,
+    "failures": 0,
+    "start": "2024-03-02T06:21:35.298Z",
+    "end": "2024-03-02T06:21:41.739Z",
+    "duration": 6441,
+    "testsRegistered": 4,
+    "passPercent": 100,
+    "pendingPercent": 50,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "1314b0c9-5142-4b2c-bd42-70cf606984a4",
+      "title": "",
+      "fullFile": "cypress\\e2e\\BDD\\feature\\login.feature",
+      "file": "cypress\\e2e\\BDD\\feature\\login.feature",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "15c7efb6-2118-42e8-b5a0-80184a4cb11d",
+          "title": "WebdriverUniversity Login Page",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Login using valid credentials",
+              "fullTitle": "WebdriverUniversity Login Page Login using valid credentials",
+              "timedOut": null,
+              "duration": 81,
+              "state": "pending",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": true,
+              "context": null,
+              "code": "// register this scenario with the cucumber data collector\n// but don't run it\n// Tell mocha this is a skipped test so it also shows correctly in Cypress\nconst state = window.testState;\ncy.then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() => state.onFinishScenario(scenario))\n  // eslint-disable-next-line func-names\n  .then(function () {\n    return this.skip();\n  });",
+              "err": {},
+              "uuid": "b8fd902d-f61f-4a32-99f8-59967ef665ac",
+              "parentUUID": "15c7efb6-2118-42e8-b5a0-80184a4cb11d",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Login using invalid credentials",
+              "fullTitle": "WebdriverUniversity Login Page Login using invalid credentials",
+              "timedOut": null,
+              "duration": 28,
+              "state": "pending",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": true,
+              "context": null,
+              "code": "// register this scenario with the cucumber data collector\n// but don't run it\n// Tell mocha this is a skipped test so it also shows correctly in Cypress\nconst state = window.testState;\ncy.then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() => state.onFinishScenario(scenario))\n  // eslint-disable-next-line func-names\n  .then(function () {\n    return this.skip();\n  });",
+              "err": {},
+              "uuid": "72238495-a135-43c6-a0fa-6a9acb2be2dd",
+              "parentUUID": "15c7efb6-2118-42e8-b5a0-80184a4cb11d",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Login using valid & invalid credentials (example #1)",
+              "fullTitle": "WebdriverUniversity Login Page Login using valid & invalid credentials (example #1)",
+              "timedOut": null,
+              "duration": 4721,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "22b780dd-5cb1-4a7a-9f5b-a0bc2bb107ea",
+              "parentUUID": "15c7efb6-2118-42e8-b5a0-80184a4cb11d",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Login using valid & invalid credentials (example #2)",
+              "fullTitle": "WebdriverUniversity Login Page Login using valid & invalid credentials (example #2)",
+              "timedOut": null,
+              "duration": 1359,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "99350ea4-dbbe-4ba6-b37a-bdef7226d97e",
+              "parentUUID": "15c7efb6-2118-42e8-b5a0-80184a4cb11d",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "22b780dd-5cb1-4a7a-9f5b-a0bc2bb107ea",
+            "99350ea4-dbbe-4ba6-b37a-bdef7226d97e"
+          ],
+          "failures": [],
+          "pending": [
+            "b8fd902d-f61f-4a32-99f8-59967ef665ac",
+            "72238495-a135-43c6-a0fa-6a9acb2be2dd"
+          ],
+          "skipped": [],
+          "duration": 6189,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/results/mochawesome",
+        "quite": "true",
+        "overwrite": "false",
+        "html": "false",
+        "json": "true"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

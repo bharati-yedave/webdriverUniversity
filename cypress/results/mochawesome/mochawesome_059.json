@@ -1,0 +1,107 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-03-01T16:22:43.546Z",
+    "end": "2024-03-01T16:22:43.678Z",
+    "duration": 132,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "1da2cf05-0032-42a9-bef6-31f6a78864d4",
+      "title": "",
+      "fullFile": "cypress\\e2e\\other1\\json-example.cy.js",
+      "file": "cypress\\e2e\\other1\\json-example.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "55a4da54-5614-4132-9590-fe184514c0e7",
+          "title": "JSON Object",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "JSON Object Examples",
+              "fullTitle": "JSON Object JSON Object Examples",
+              "timedOut": null,
+              "duration": 83,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//using object\nvar exampleObject = {\n  key: \"Tim\",\n  key2: \"Jones\"\n};\n//using arrayof value\nvar exampleArrayOfValue = [\"Sophie\", \"Rose\", \"Howard\"];\n//using combining object+Array\nvar users = {\n  firstname: \"Joe\",\n  lastname: \"Blogs\",\n  Age: 30,\n  students: [{\n    firstname: \"Jim\",\n    lastname: \"Blogs2\"\n  }, {\n    firstname: \"Sarah\",\n    lastname: \"Parker\"\n  }]\n};\n//using arrayof object\nvar exampleArrayOfObject = [{\n  key1: \"Bharati\",\n  key11: \"Bharati_Yedave\"\n}, {\n  key2: \"Rahujade\"\n}, {\n  key3: \"29\"\n}];\n//output from object\ncy.log(exampleObject.key);\ncy.log(exampleObject[\"key2\"]);\n//output from arrayvalue\ncy.log(exampleArrayOfValue[0]);\ncy.log(exampleArrayOfValue[1]);\n//output from combination from object and arrayvalue\ncy.log(users.firstname);\ncy.log(users.lastname);\ncy.log(users.Age);\ncy.log(users.students);\ncy.log(users.students[0]);\ncy.log(users.students[1]);\ncy.log(users.students[0].firstname);\ncy.log(users.students[1].lastname);\ncy.log(exampleArrayOfObject);\ncy.log(exampleArrayOfObject[0]);\ncy.log(exampleArrayOfObject[1]);\ncy.log(exampleArrayOfObject[2]);\ncy.log(exampleArrayOfObject[0].key11);\ncy.log(exampleArrayOfObject[1].key2);\ncy.log(exampleArrayOfObject[2].key3);",
+              "err": {},
+              "uuid": "86f99dee-8b95-47c4-af6b-79548c9304f7",
+              "parentUUID": "55a4da54-5614-4132-9590-fe184514c0e7",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "86f99dee-8b95-47c4-af6b-79548c9304f7"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 83,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/results/mochawesome",
+        "quite": "true",
+        "overwrite": "false",
+        "html": "false",
+        "json": "true"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

@@ -1,0 +1,164 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 4,
+    "passes": 4,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-03-02T06:31:55.592Z",
+    "end": "2024-03-02T06:32:04.885Z",
+    "duration": 9293,
+    "testsRegistered": 4,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "5896ae74-cfba-41bc-9c57-e166b615d312",
+      "title": "",
+      "fullFile": "cypress\\e2e\\BDD\\features\\login.feature",
+      "file": "cypress\\e2e\\BDD\\features\\login.feature",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "7cbb0a60-2400-41e2-9c01-c4fe11edaea3",
+          "title": "WebdriverUniversity Login Page",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Login using valid credentials",
+              "fullTitle": "WebdriverUniversity Login Page Login using valid credentials",
+              "timedOut": null,
+              "duration": 4930,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "34bf960e-f187-4535-b81f-6530a9038f3c",
+              "parentUUID": "7cbb0a60-2400-41e2-9c01-c4fe11edaea3",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Login using invalid credentials",
+              "fullTitle": "WebdriverUniversity Login Page Login using invalid credentials",
+              "timedOut": null,
+              "duration": 1373,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "248fb71f-9321-406e-8609-a57883311d17",
+              "parentUUID": "7cbb0a60-2400-41e2-9c01-c4fe11edaea3",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Login using valid & invalid credentials (example #1)",
+              "fullTitle": "WebdriverUniversity Login Page Login using valid & invalid credentials (example #1)",
+              "timedOut": null,
+              "duration": 1304,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "2375456b-6aba-49f0-be27-d53b7b8b069b",
+              "parentUUID": "7cbb0a60-2400-41e2-9c01-c4fe11edaea3",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Login using valid & invalid credentials (example #2)",
+              "fullTitle": "WebdriverUniversity Login Page Login using valid & invalid credentials (example #2)",
+              "timedOut": null,
+              "duration": 1373,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "b057c6b0-4e1c-4429-8ec8-844fa44d597b",
+              "parentUUID": "7cbb0a60-2400-41e2-9c01-c4fe11edaea3",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "34bf960e-f187-4535-b81f-6530a9038f3c",
+            "248fb71f-9321-406e-8609-a57883311d17",
+            "2375456b-6aba-49f0-be27-d53b7b8b069b",
+            "b057c6b0-4e1c-4429-8ec8-844fa44d597b"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 8980,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/results/mochawesome",
+        "quite": "true",
+        "overwrite": "false",
+        "html": "false",
+        "json": "true"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

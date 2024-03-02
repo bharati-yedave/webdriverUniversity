@@ -1,4 +1,5 @@
 const { defineConfig } = require("cypress");
+const cucumber = require("cypress-cucumber-preprocessor").default;
 
 module.exports = defineConfig({
   reporter: "mochawesome",
@@ -12,8 +13,9 @@ module.exports = defineConfig({
   e2e: {
     setupNodeEvents(on, config) {
       // implement node event listeners here
+      on("file:preprocessor", cucumber());
     },
-    specPAttern: "cypress/e2e/**/*.{js,jsx,ts,tsx,feature}",
+    specPattern: "cypress/e2e/**/*.{js,jsx,ts,tsx,feature}",
     excludeSpecPattern: "cypress/e2e/other/*.js",
     viewportHeight: 660,
     viewportWidth: 1000,
@@ -27,6 +29,7 @@ module.exports = defineConfig({
     video: false,
     videoUploadOnPasses: false,
     videosFolder: "cypress/video",
+    experimentalStudio: true,
     baseUrl: "https://www.webdriveruniversity.com",
     reporter: "cypress-multi-reporters",
     reporterOptions: {

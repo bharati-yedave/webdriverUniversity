@@ -13,6 +13,9 @@
     "triggerAllTest-webDriverUniversity": "npx cypress run --spec cypress/e2e/webUni/*",
     "triggerAllTest-autoMationTestStore": "npx cypress run --spec cypress/e2e/autoMtestStore/*",
     "triggerAllTest-autoMationTestStore-specificfile": "npx cypress run --spec cypress/e2e/webUni/contact-us.cy.js",
+    "triggerAllTest-BDD-cucumber": "npx cypress run --spec cypress/e2e/BDD/features/*.feature --headed --browser chrome",
+    "triggerAllTest-BDD-cucumber-@regression": "npx cypress run --spec cypress/e2e/BDD/feature/login.feature -e TAGS='@regression' --headed --browser chrome",
+    "triggerAllTest-BDD-cucumber-@regression-singletag": "npx cypress run --spec cypress/e2e/BDD/feature/login.feature -e TAGS='@validlogin' --headed --browser chrome",
     "specific-file-run": "npx cypress run --browser chrome --headed --spec cypress/e2e/other1/hooks.cy.js",
     "junit-mergeAll-report": "npx junit-merge -d cypress/results/junit -o cypress/results/junit/results.xml",
     "delete-junit-report": "rimraf cypress/results/junit/results.xml",
@@ -45,10 +48,15 @@
   },
   "devDependencies": {
     "@4tw/cypress-drag-drop": "^2.2.5",
+    "cypress-cucumber-preprocessor": "^4.3.1",
     "cypress-multi-reporters": "^1.6.4",
     "mocha-junit-reporter": "^2.2.1",
     "mochawesome": "^7.1.3",
     "mochawesome-merge": "^4.3.0",
     "mochawesome-report-generator": "^6.2.0"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": false,
+    "stepDefinitions": "cypress/support/step_definitions"
   }
 }
